@@ -3,14 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kim's Portfolio</title>
+  <title>John Kimani | Developer Portfolio</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>John Kimani</h1>
+  <header class="site-header">
+    <div class="logo">John<span>.</span></div>
     <nav>
-      <ul>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -20,89 +25,144 @@
   </header>
 
   <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        <p class="greeting">Hello, I'm</p>
+        <h1><span class="gradient-text">John Kimani</span></h1>
+        <p class="tagline">Full-Stack Software Engineer specializing in architecting robust web applications and intuitive digital experiences.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary-btn">View My Work</a>
+          <a href="#contact" class="btn secondary-btn">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <div class="blob-bg"></div>
+        <img src="images/profile1.jpg" alt="John Kimani" class="hero-image" />
+      </div>
+    </section>
+
     <!-- About Me Section -->
-    <section id="about">
-      <h2>About Me</h2>
-      <div class="about-container">
-        <img src="images/profile1.jpg" alt="Kim's Profile Picture" class="profile-image" />
+    <section id="about" class="section">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-container glass-card reveal">
         <div class="about-text">
           <p>
-            Hi, I’m John Kimani a passionate developer with a strong interest in solving real-world problems through code. My programming journey began when I saw how inefficient manual systems can be, especially in educational environments. I decided to learn how to build smarter, more reliable tools using technology.
+            I am a results-driven Software Engineer with a strong passion for building intuitive, high-performance applications. My journey into technology was sparked by a desire to optimize inefficient manual systems and solve complex, real-world problems through innovative software architecture.
           </p>
           <p>
-            I’m currently building a Tally App a digital attendance tracker for instructors that works offline and syncs data when connected. It’s being developed using HTML, CSS, JavaScript for the web version, and Kotlin for mobile. It’s a hands-on project that’s helping me improve my skills while directly impacting how people work.
+            Currently, I am architecting the <strong>Tally App</strong> — a cross-platform digital attendance tracker designed to provide robust offline capabilities and seamless data synchronization. By leveraging modern web technologies (HTML, CSS, JavaScript) alongside Kotlin for mobile development, I am delivering a reliable tool that directly enhances operational productivity for educators.
           </p>
           <p>
-            I aim to become a full-stack developer who creates meaningful software for learning, community, and productivity. I also enjoy teaching others and exploring new technologies in my free time.
+            My objective is to continue evolving as a Full-Stack Developer, crafting meaningful software that fosters learning, community engagement, and business efficiency. When I'm not coding, I actively enjoy mentoring peers and exploring emerging technologies.
           </p>
         </div>
       </div>
     </section>
 
-    <section id="education">
-  <h2>Education</h2>
+    <section id="education" class="section">
+  <h2 class="section-title">Education</h2>
   <div class="education-list">
-    <div class="education-item">
+    <div class="education-item glass-card reveal">
       <h3>Bachelor of Science in Software Engineering</h3>
       <p><strong>Kirinyaga University</strong> </p>
-      <p>Focused on full stack web development, databases, and mobile apps. Led team based coding projects and participated in hackathons.</p>
-      <a href="images/John Kiman Resume.pdf" class="cv-button" download> Download My CV</a>
+      <p>Concentrated on Full-Stack Web Development, Database Architecture, and Mobile Application Design. Demonstrated technical leadership by directing team-based software projects and actively competing in coding hackathons.</p>
+      <a href="images/John Kiman Resume.pdf" class="cv-button" download> Download My Resume</a>
     </div>
   </div>
 </section>
 
 
     <!-- Skills Section -->
-    <section id="skills">
-      <h2>Skills & Tools</h2>
-      <div class="skills-container">
-        <div class="skill">HTML5</div>
-        <div class="skill">CSS</div>
-        <div class="skill">JavaScript</div>
-        <div class="skill">Kotlin</div>
-        <div class="skill">Git & GitHub</div>
-        <div class="skill">Responsive Design</div>
+    <section id="skills" class="section">
+      <h2 class="section-title">Technical Expertise</h2>
+      <div class="skills-container reveal">
+        <div class="skill">HTML5 & CSS3</div>
+        <div class="skill">JavaScript (ES6+)</div>
+        <div class="skill">Kotlin (Mobile)</div>
+        <div class="skill">Version Control (Git)</div>
+        <div class="skill">Responsive UI Design</div>
+        <div class="skill">Systems Architecture</div>
+        <div class="skill">Agile Collaboration</div>
         <div class="skill">Problem Solving</div>
-        <div class="skill">Team Communication</div>
       </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
-      <h2>Projects</h2>
+    <section id="projects" class="section">
+      <h2 class="section-title">Featured Projects</h2>
       <div class="projects-container">
-        <div class="project-card">
-          <h3>Agricultural website</h3>
-          <p>A web platform for modern farmers featuring real-time crop monitoring, weather alerts, and market price tracking. Built with HTML, CSS, and JavaScript</p>
-          <a href=https://github.com/Johkimani/Agriculture.web target="_blank">View on GitHub</a>
+        <div class="project-card glass-card reveal">
+          <div class="project-content">
+            <h3>Smart Agricultural Platform</h3>
+            <p>Engineered a responsive web platform empowering modern farmers with real-time crop monitoring, weather alerts, and dynamic market price tracking. Developed utilizing HTML5, CSS3, and JavaScript to deliver an intuitive user experience.</p>
+          </div>
+          <a href="https://github.com/Johkimani/Agriculture.web" target="_blank" class="project-link">View Repository &rarr;</a>
         </div>
 
-        <div class="project-card">
-          <h3>Calculator App</h3>
-          <p>A simple, interactive calculator that performs basic arithmetic operations and intelligently displays floats or integers. Built using Python.</p>
-          <a href="https://github.com/Johkimani/calc_assignment" target="_blank">View on GitHub</a>
+        <div class="project-card glass-card reveal reveal-delay-1">
+          <div class="project-content">
+            <h3>Interactive Python Calculator</h3>
+            <p>Developed a robust, interactive calculator application that processes complex arithmetic operations with intelligent dynamic typing for floats and integers. Engineered using Python, focusing on edge-case handling and clean computational logic.</p>
+          </div>
+          <a href="https://github.com/Johkimani/calc_assignment" target="_blank" class="project-link">View Repository &rarr;</a>
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-      <h2>Contact</h2>
+    <section id="contact" class="section">
+      <h2 class="section-title">Let's Connect</h2>
       <p class="contact-intro">
-        Have a project in mind or want to connect? Feel free to reach out!
+        Whether you have a compelling project in mind, need technical consultation, or simply want to connect, I'd love to hear from you. Let's build something exceptional together.
       </p>
 
-      <div class="contact-info">
-        <p><strong>Email:</strong> <a href="mailto:kimanijohn1236@gmail.com.com">kimanijohn1236@gmail.com</a></p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/johkimani" target="_blank">github.com/johkimani</a></p>
-      </div>
+      <div class="contact-container glass-card reveal">
+        <div class="contact-info">
+          <div class="info-card">
+            <h4>Email</h4>
+            <a href="mailto:kimanijohn1236@gmail.com">kimanijohn1236@gmail.com</a>
+          </div>
+          <div class="info-card">
+            <h4>GitHub</h4>
+            <a href="https://github.com/johkimani" target="_blank">github.com/johkimani</a>
+          </div>
+        </div>
 
-      <form class="contact-form" onsubmit="event.preventDefault(); alert('Form submission coming soon!')">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+        <form class="contact-form" id="contactForm" action="https://formsubmit.co/kimanijohn1236@gmail.com" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="How can I help you?" required></textarea>
+          </div>
+          
+          <!-- Hidden fields for FormSubmit configuration -->
+          <input type="hidden" name="_subject" value="New contact from Portfolio!">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          
+          <button type="submit" class="btn primary-btn">Send Message</button>
+        </form>
+
+        <div id="formSuccessMessage" class="form-success-message" style="display: none;">
+          <div class="success-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+          </div>
+          <h3>Message Sent Successfully!</h3>
+          <p>Thank you for reaching out. I'll get back to you as soon as possible.</p>
+          <button id="sendAnotherBtn" class="btn secondary-btn">Send Another Message</button>
+        </div>
+      </div>
     </section>
   </main>
 
